@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
 import { ThemeProvider } from '@/context/ThemeContext';
@@ -9,7 +8,7 @@ import GuidePage from '@/pages/GuidePage';
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Chess-axis-/">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/player/:platform/:username" element={<DashboardPage />} />
